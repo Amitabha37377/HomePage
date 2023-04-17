@@ -1,0 +1,36 @@
+/* Styles for the side menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -700px;
+    width: 700px;
+    height: 100%;
+    background-color: #17063D;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: right 0.3s ease-in-out;
+    z-index: 10;
+    overflow-y: scroll;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 720px) {
+    .side-menu {
+        width: 350px;
+        right: -350px;
+    }
+}    
+
+body.side-menu-open {
+    overflow: hidden;
+}
+/* Styles for the close button inside the side menu
+.close-menu-btn {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(111, 109, 230);
+    color: white;
+    border: none;
+    cursor: pointer;
+} */

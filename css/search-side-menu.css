@@ -1,0 +1,22 @@
+	/* Styles for the side menu */
+    .search-engines {
+        position: fixed;
+        top: 0;
+        left: -350px;
+        width: 350px;
+        height: 100%;
+        background-color: #17063D;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: left 0.3s ease-in-out;
+        z-index: 10;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .search-engines::-webkit-scrollbar {
+        display: none;
+    }
+
+     

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Start Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/search-side-menu.css">
+
+  <style>
+    body{
+      background-image: url(images/1.jpg);
+    }
+  </style>
+
+</head>
+
+<body class="bg-center">
+  <!--Upper NavBar Containing firefox logo, time, launcher, weather-->
+  <nav class="bg-blue-950 md:px-8">
+    <div class="flex justify-between">
+      
+      <!--Left Modules-->
+      <div class="flex p-2">
+
+        <!--Firefox Logo-->
+        <div class="mx-3">
+          <img src="images/sticker (2).png" class="h-7">
+        </div>
+
+        <!--Empty logo for center alignment-->
+        <div class="mx-3">  
+          <img src="images/Firefox_logo,_2019.svg.webp" class="h-7 opacity-0">
+        </div>  
+        </div>
+      
+      <!--Middle: Time module-->  
+      <div class="flex p-2">
+        <div class="text-lg text-sky-200" id="current-time">
+        </div>
+      </div>
+
+      <!--Right modules-->
+      <div class="flex p-2">
+        
+        <!--Website Launcher-->
+        <div class="mx-3">
+          <img src="images/launcher.png" class="h-7 open-menu-btn transform hover:shadow-md hover:shadow-blue-800 hover:bg-blue-600 hover:rounded-md">
+        </div>
+
+        <!--Search Menu-->
+        <div class="mx-3 mr-0 md:mr-3">
+          <img src="images/search-5847.png" class="h-7 open-search2 transform hover:shadow-md hover:shadow-blue-800 hover:bg-blue-600 hover:rounded-md"">
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!--Sidemenu (opened when launcher is clicked)-->
+  <div class="side-menu text-[#7AA5D5] ">
+		<button class="close-menu-btn m-3 p-2 bg-fuchsia-800 rounded-lg text-yellow-200 shadow-md transform hover:bg-fuchsia-600  hover:shadow-md hover:shadow-blue-950">Back</button>
+    
+    <!--First SectionHeading: Cloud-->
+    <div class="ml-4 mt-8 mb-2 text-xl bg-[#3511A7] rounded-xl px-8">cloud</div>
+
+    <!--First Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Mega-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://mega.io/' ">
+        <a href="#"><img src="images2/mega.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Mega</div>
+      </div>
+      </div>
+
+      <!--Sync.com-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.sync.com/' ">
+        <a href="#"><img src="images2/Sync_dot_com.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Sync.com</div> 
+      </div>
+      </div>
+      
+      <!--Google Drive-->
+      <div>
+       <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://drive.google.com/drive/my-drive' ">
+        <a href="#"><img src="images2/Google_Drive_logo.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4 md:py-0">Google Drive</div>
+       </div> 
+      </div>
+    </div>
+
+    <!--Second Section Heading: Entertainment-->
+    <div class="ml-4 mt-8 mb-2 text-xl bg-[#3511A7] rounded-xl px-8">Entertainment</div>
+
+    <!--Second Section: First Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+
+      <!--Youtube-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.youtube.com/' ">
+        <a href="#"><img src="images2/youtube.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Youtube</div>
+      </div>
+      </div>
+
+      <!--Twitch-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.twitch.tv/' ">
+        <a href="#"><img src="images2/twitch.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Twitch</div> 
+      </div>
+      </div>
+      
+      <!--Spotify-->
+      <div>
+       <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://open.spotify.com/' ">
+        <a href="#"><img src="images2/spotify-logo-png-7053.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Spotify</div>
+       </div> 
+      </div>
+    </div>
+	   
+    <!--Second Section: Second Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Netflix-->
+      <div> 
+      <div class="flex flex-row transform p-2 mx-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.netflix.com/' ">
+        <a href="#"><img src="images2/netflix-logo-png-2574.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Netflix</div>
+      </div>
+      </div>
+
+      <!--Amazon Prime-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.primevideo.com/' ">
+        <a href="#"><img src="images2/amazon-prime.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4 md:py-0">Amazon Prime</div> 
+      </div>
+      </div>
+      
+      <!--SonyLiv-->
+      <div>
+       <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.sonyliv.com/' ">
+        <a href="#"><img src="images2/sonyliv-logo-freelogovectors.net_.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Sonyliv</div>
+       </div> 
+      </div>
+    </div>
+	   
+    <!--Second Section: Third Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--NHentai-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://nhentai.to/' ">
+        <a href="#"><img src="images2/nhen.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">NHentai</div>
+      </div>
+      </div>
+
+      <!--Reddit-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.reddit.com/' ">
+        <a href="#"><img src="images2/reddit-logo-2436.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Reddit</div> 
+      </div>
+      </div>
+    </div>
+
+    <!--Third Section: Development & Programming-->
+    <div class="ml-4 mt-8 mb-2 text-xl bg-[#3511A7] rounded-xl px-8">Development & Programming</div>
+
+    <!--Third Section: First Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Github-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://github.com/' ">
+        <a href="#"><img src="images2/github-logo-6532.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Github</div>
+      </div>
+      </div>
+
+      <!--Gitlab-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://about.gitlab.com/' ">
+        <a href="#"><img src="images2/gitlab.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Gitlab</div> 
+      </div>
+      </div>
+      
+      <!--Stack Overflow-->
+      <div>
+       <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://stackoverflow.com/' ">
+        <a href="#"><img src="images2/stck_overflow.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4 md:py-0">Stack Overflow</div>
+       </div> 
+      </div>
+    </div>
+	   
+    <!--Third Section: Second Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Nerd Fonts-->
+      <div> 
+      <div class="flex flex-row transform p-2 mx-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.nerdfonts.com/' ">
+        <a href="#"><img src="images2/nerd-fonts-logo.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Nerd Fonts</div>
+      </div>
+      </div>
+
+      <!--Stack Exchange-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://stackexchange.com/' ">
+        <a href="#"><img src="images2/stack-exchange-3629080-3030352.png" class="h-14"></a>        
+        <div class="text-xl ml-2 py-4 md:py-0">Stack Exchange</div> 
+      </div>
+      </div>
+      
+      <!--Icons8-->
+      <div>
+       <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://icons8.com/' ">
+        <a href="#"><img src="images2/icons8-logo-B1CC099303-seeklogo.com.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Icons8</div>
+       </div> 
+      </div>
+    </div>
+	   
+    <!--Third Section: Third Row-->
+     <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Tailwind CSS-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://tailwindcss.com/' ">
+        <a href="#"><img src="images2/Tailwind_CSS_Logo.svg.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4 ">Tailwind CSS</div>
+      </div>
+      </div>
+
+      <!--Replit-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://replit.com/' ">
+        <a href="#"><img src="images2/New_Replit_Logo.svg.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Replit</div> 
+      </div>
+      </div>
+
+      <!--Third Secttion: Fourth Row-->
+      <!--Udemy-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.udemy.com/' ">
+        <a href="#"><img src="images2/udemy.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Udemy</div> 
+      </div>
+      </div>
+
+      <!--Oreilly-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.oreilly.com/' ">
+        <a href="#"><img src="images2/oreilly.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Oreilly</div> 
+      </div>
+      </div>
+    </div>
+
+    <!--Fourth Section Heading: Chess-->
+    <div class="ml-4 mt-8 mb-2 text-xl bg-[#3614A9] rounded-xl px-8">Chess</div>
+
+    <!--First Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Lichess-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://lichess.org/' ">
+        <a href="#"><img src="images2/lichess.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Lichess</div>
+      </div>
+      </div>
+
+      <!--Chess.com-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.chess.com/' ">
+        <a href="#"><img src="images2/chess_com.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Chess.com</div> 
+      </div>
+      </div>
+    </div>
+   
+    <!--Fifth Section Heading: Email-->
+    <div class="ml-4 mt-8 mb-2 text-xl bg-[#3511A7] rounded-xl px-8">Email</div>
+
+    <!--First Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Protonmail-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://proton.me/mail' ">
+        <a href="#"><img src="images2/proton-mail-logo.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">ProtonMail</div>
+      </div>
+      </div>
+
+      <!--Tutanota-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://tutanota.com/' ">
+        <a href="#"><img src="images2/Tutanota.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Tutanota</div> 
+      </div>
+      </div>
+      
+      <!--Gmail-->
+      <div>
+       <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://mail.google.com' ">
+        <a href="#"><img src="images2/google-mail-icon-logo-isolated-on-transparent-background-free-vector.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Gmail</div>
+       </div> 
+      </div>
+    </div>
+ 
+    <!--Sixth Section Heading: Social-->
+    <div class="ml-4 mt-8 mb-2 text-xl bg-[#3511A7] rounded-xl px-8">Social</div>
+
+    <!--Sixth Section: First Row-->
+    <div class="grid grid-cols-1 md:griHomePaged md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Reddit-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.reddit.com/' ">
+        <a href="#"><img src="images2/reddit-logo-2436.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Reddit</div>
+      </div>
+      </div>
+
+      <!--Telegram-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://web.telegram.org/z/' ">
+        <a href="#"><img src="images2/telegram.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Telegram</div> 
+      </div>
+      </div>
+      
+      <!--Whatsapp-->
+      <div>
+       <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://web.whatsapp.com/' ">
+        <a href="#"><img src="images2/whatsapp.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Whatsapp</div>
+       </div> 
+      </div>
+    </div>
+ 
+     <!--Sixth Section:Second Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Facebook-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.facebook.com/' ">
+        <a href="#"><img src="images2/facebook.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Facebook</div>
+      </div>
+      </div>
+
+      <!--Instagram-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.instagram.com/' ">
+        <a href="#"><img src="images2/instagram.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Instagram</div> 
+      </div>
+      </div>
+      
+      <!--Twitter-->
+      <div>
+       <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://twitter.com/' ">
+        <a href="#"><img src="images2/twitter.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Twitter</div>
+       </div> 
+      </div>
+
+
+      <!--Linkedin-->
+      <div>
+       <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.linkedin.com' ">
+        <a href="#"><img src="images2/Linkedin.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Linkedin</div>
+       </div> 
+      </div>     
+
+    </div>
+    
+    <!--Seventh SectionHeading: Information-->
+    <div class="ml-4 mt-8 mb-2 text-xl bg-[#3511A7] rounded-xl px-8">Information</div>
+
+    <!--Seventh Section: First Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Wikipedia-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.wikipedia.org/' ">
+        <a href="#"><img src="images2/Wikipedia-logo-transparent.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Wikipedia</div>
+      </div>
+      </div>
+
+      <!--Arch Wiki-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://wiki.archlinux.org/' ;">
+        <a href="#"><img src="images2/archlinux-512.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Arch Wiki</div> 
+      </div>
+      </div>
+      
+      <!--Gentoo Wiki-->
+      <div>
+       <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://wiki.gentoo.org/wiki/Main_Page'; ">
+        <a href="https://wiki.gentoo.org/wiki/Main_Page"><img src="images2/Gentoo_Linux_logo_matte.svg.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Gentoo Wiki</div></div>
+       </div> 
+      </div>
+
+    <!--Seventh Section: Second Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-2 mx-auto ml-4 my-3">
+      
+      <!--Linux From Scratch-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.linuxfromscratch.org/' ">
+        <a href="#"><img src="images2/lfs.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4 ">Linux from Scratch</div>
+      </div>
+      </div>
+
+      <!--Fedora Forum-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://fedoraforum.org/' ">
+        <a href="#"><img src="images2/fedora-1-logo-png-transparent.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Fedora Forum</div> 
+      </div>
+      </div>
+    </div>
+
+    <!--Seventh SectionHeading: Search Engines -->
+    <div class="ml-4 mt-8 mb-2 text-xl bg-[#3511A7] rounded-xl px-8">Search Engines</div>
+
+    <!--Eightth Section: First Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Startpage-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.startpage.com/' ">
+        <a href="#"><img src="images2/startpage.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Startpage</div>
+      </div>
+      </div>
+
+      <!--Duckduckgo-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://duckduckgo.com/' ">
+        <a href="#"><img src="images2/The_DuckDuckGo_Duck.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">DuckDuckGO</div> 
+      </div>
+      </div>
+      
+      <!--Searx-->
+      <div>
+       <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://searxng.nicfab.eu/' ">
+        <a href="#"><img src="images2/Searx.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">SearX</div>
+       </div> 
+      </div>
+    </div>
+
+    <!--Eighth Section: Second Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Google-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.google.com/' ">
+        <a href="#"><img src="images2/google.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4 ">Google</div>
+      </div>
+      </div>
+
+      <!--ChatGPT-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://chat.openai.com/' ">
+        <a href="#"><img src="images2/chatgpt.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">ChatGPT</div> 
+      </div>
+      </div>
+
+      <!--BIng-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.bing.com' ">
+        <a href="#"><img src="images2/bing-icon.54c50c8.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4 ">Bing</div>
+      </div>
+      </div>
+    </div>
+
+    <!--Ninth Section Heading: Shopping-->
+    <div class="ml-4 mt-8 mb-2 text-xl bg-[#3511A7] rounded-xl px-8">Shopping</div>
+
+    <!--First Row-->
+    <div class="grid grid-cols-1 md:grid md:grid-cols-3 mx-auto ml-4 my-3">
+      
+      <!--Amazon-->
+      <div> 
+      <div class="flex flex-row transform mx-2 p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.amazon.com/' ">
+        <a href="#"><img src="images2/Amazon_icon.svg.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Amazon</div>
+      </div>
+      </div>
+
+      <!--Flipkart-->
+      <div>
+      <div class="flex flex-row mx-2 transform p-2 hover:bg-[#330E6D] hover:rounded-xl" onclick="window.location.href='https://www.flipkart.com/' ">
+        <a href="#"><img src="images2/flipkart.png" class="h-14"></a>
+        <div class="text-xl ml-2 py-4">Flipkart</div> 
+      </div>
+      </div>
+    </div>
+ 
+</div>
+
+<!--Search Engines-->
+	<div class="search-engines text-[#7AA5D5]">
+ 		<button class="close-menu-search m-3 p-2 bg-fuchsia-800 rounded-lg text-yellow-200 shadow-md transform hover:bg-fuchsia-600  hover:shadow-md hover:shadow-blue-950">Back</button>
+  
+    <div class=" mt-8 mb-2 text-xl bg-[#3511A7] rounded-xl px-8">Google</div>
+    <img src="images2/google.png" class="h-40 mx-auto my-4">
+    <input type="text" placeholder="Google search" id="search" name="search" onkeydown="if(event.keyCode == 13) {searchGoogle();}" class="border-2 block mx-auto align-middle h-10 w-60 p-3 mt-5 my-15 mb-20 m-3 border-15 border-sky-900 rounded-3xl text-center text-black">
+   
+    <div class=" mt-8 mb-2 text-xl bg-[#3511A7] rounded-xl px-8">Duckduckgo</div>
+    <img src="images2/The_DuckDuckGo_Duck.png" class="h-40 mx-auto my-4">
+    <input type="text" placeholder="Duckduckgo search" id="search3" name="search" onkeydown="if(event.keyCode == 13) {searchDuckduckgo();}" class="border-2 block mx-auto align-middle h-10 w-60 p-3 mt-5 my-15 mb-20 m-3 border-15 border-sky-900 rounded-3xl text-center text-black">
+    
+    <div class=" mt-8 mb-2 text-xl bg-[#3511A7] rounded-xl px-8">Startpage</div>
+    <img src="images2/startpage2.png" class="h-40 mx-auto my-4">
+    <input type="text" placeholder="Startpage search" id="search2" name="search" onkeydown="if(event.keyCode == 13) {searchStartpage2();}" class="border-2 block mx-auto align-middle h-10 w-60 p-3 mt-5 my-15 mb-20 m-3 border-15 border-sky-900 rounded-3xl text-center text-black">
+   
+    <div class=" mt-8 mb-2 text-xl bg-[#3511A7] rounded-xl px-8">Bing</div>
+    <img src="images2/bing-icon.54c50c8.png" class="h-40 mx-auto my-4">
+    <input type="text" placeholder="Bing search" id="search4" name="search" onkeydown="if(event.keyCode == 13) {searchBing();}" class="border-2 block mx-auto align-middle h-10 w-60 p-3 mt-5 my-15 mb-20 m-3 border-15 border-sky-900 rounded-3xl text-center text-black">
+ 
+
+	</div>
+
+	   
+
+  </div>
+  <!--Profile pic-->
+  <div class="py-20 pb-10">
+    <img src="images/Anime-Girl.png" class="mx-auto h-80">
+  </div>
+
+  <!--Search Bar => Google/Duckduckgo/Startpage -->
+  <div class="pb-20">
+    <input type="text" placeholder="search" id="search_main" name="search" onkeydown="if(event.keyCode == 13) {searchStartpage();}" class="border-2 block mx-auto align-middle h-10 w-80 p-3 mt-5 my-15 mb-20 m-3 border-15 border-sky-900 rounded-3xl text-center">
+  </div>  
+
+  <!--Dock with favorite websites-->
+  <div class="flex items-center justify-center">
+    <div class="grid grid-cols-3 md:flex md:flex-row shadow-sm shadow-blue-800 bg-[#3511A7] mx-auto rounded-3xl px-4 py-2 mb-2">
+
+      <!--Launcher-->
+      <div><a href="#"><img src="images/launcher.png" class="hover:bg-[#330E6D] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:p-1 duration-150 open-menu-btn2"></a></div>
+
+      <!--Youtube-->
+      <div><a href="https://www.youtube.com/"><img src="images/youtube.png" class="hover:bg-[#330E6D] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:p-1 duration-150"></a></div>
+
+      <!--Github-->
+      <div><a href="https://github.com/"><img src="images/github-logo-6532.png" class="hover:bg-[#330E6D] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:w-21 hover:p-1 duration-150"></a></div>
+      
+      <!--Reddit-->
+      <div><a href="https://www.reddit.com/"><img src="images/reddit-logo-2436.png" class="hover:bg-[#330E6D] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:p-1 duration-150" ></a></div>
+      
+      <!--Mega-->
+      <div><a href="https://mega.io/"><img src="images/mega.png" class="hover:bg-[#330E6D] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:p-1 duration-150" ></a></div>
+      
+      <!--Tailwind Website-->
+      <div><a href="https://tailwindcss.com/"><img src="images/Tailwind_CSS_Logo.svg.png" class="hover:bg-[#330E6D] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:p-1 duration-150"></a></div>
+      
+      <!--Protonmail-->
+      <div><a href="https://proton.me/"><img src="images/proton-mail-logo.png" class="hover:bg-[#330E6D] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:p-1 duration-150"></a></div>
+      
+      <!--Chatgpt Viewer-->
+      <div><a href="https://chat.openai.com/"><img src="images2/chatgpt.png" class="hover:bg-[#330E6D] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:p-1 duration-150"></a></div>
+
+      <!--Search Engine Switcher-->
+      <div><a href="#"><img src="images/search-5847.png" class="hover:bg-[#330E6D] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:p-1 duration-150 open-search"></a></div>
+    </div>
+  </div>
+
+  <!--Scripts-->
+  <script src="scripts/search.js"></script>
+  <script src="scripts/time.js"></script>
+  <script src="scripts/launcher-sidemenu.js"></script>
+  <script src="scripts/SearchEnginesSidemenu.js"></script>
+
+</body>
+
+</html>
