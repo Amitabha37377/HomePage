@@ -1,0 +1,64 @@
+cloud:-
+  1.Mega
+  2.Sync.com
+  3.Google Drive
+
+Entertainment:-
+  1.Youtube
+  2.Twitch
+  3.Spotify
+  4.Netflix
+  5.AmazonPrime
+  6.Sonyliv
+
+Development & Programming:-
+  1.Github
+  2.StackOverflow
+  3.TailwindCss
+  4.Gitlab
+  5.NerdFonts
+  6.Stackexchange
+  7.icons8
+  8.replit
+  9.w3school
+  10.udemy
+  11.oreilly
+
+Chess:-
+  1.Chess.com
+  2.Lichess
+
+Email:-
+  1.Gmail
+  2.Protonmail
+  3.Tutanota
+
+Search Engines:-
+  1.Google
+  2.Duckduckgo
+  3.Bing
+  4.Quant
+  5.Startpage
+  6.Chatgpt 
+
+Information:-
+  1.Wikipedia
+  2.Arch Wiki
+  3.Gentoo Wiki
+  4.Linux From Scratch
+  5.Fedora forum
+
+Shopping:-
+  1.Amazon
+  2.Flipkart
+  3.Ebay
+
+Social:-
+  1.Reddit
+  2.Telegram
+  3.Whatsapp
+  4.Facebook
+  5.Instagram
+  6.Twitter
+  7.linkedin
+  

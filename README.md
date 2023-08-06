@@ -1,3 +1,3 @@
-# HomePage
+# Firefox HomePage
 
-## Website Link: https://amitabha37377.github.io/HomePage/
+### Webpage preview: https://amitabha37377.github.io/HomePage2/
